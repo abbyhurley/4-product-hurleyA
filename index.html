@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <!-- character encoding -->
+        <meta charset="UTF-8">
+        <!-- title tag -->
+        <title>Product/Company Page Project - Mr. Messina</title>
+        <!-- mobile-friendly viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- W3.CSS stylesheet -->
+        <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- custom style -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <!-- top nav, desktop and tablet -->
+
+        <div class="w3-top">
+            <div class="w3-bar w3-theme">
+                <a href="#Wet n' Wild" class="w3-bar-item w3-button">Wet n' Wild</a>
+                <a href="#About" class="w3-bar-item w3-button w3-hide-small">About</a>
+                <a href="#Face & Eyes" class="w3-bar-item w3-button w3-hide-small">Face & Eyes</a>
+                <a href="#Lips" class="w3-bar-item w3-button w3-hide-small">Lips</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+            </div>
+
+            <!-- top nav, mobile -->
+
+            <div id="mobileNav" class="w3-bar-block w3-theme-l1 w3-hide w3-hide-large w3-hide-medium">
+                <a href="#" class="w3-bar-item w3-button">About</a>
+                <a href="#" class="w3-bar-item w3-button">Face & Eyes</a>
+                <a href="#" class="w3-bar-item w3-button">Lips</a>
+            </div>
+        </div>
+
+
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+            <div class="w3-display-middle" style="white-space:nowrap;">
+                <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">WET <span class="w3-hide-small">N'</span> WILD</span>
+            </div>
+        </div>
+
+        <!-- Container (About Section) -->
+        <div class="w3-padding-64" id="About">
+
+            <div class="w3-row w3-container">
+                <h1>About</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                            <i class="fa fa-book"></i>
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3>Who Are We?</h3>  
+                            <p>We are the #1 value brand in America. Our products have always, always been some of the best-priced on the market!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3>Cruelty Free</h3>  
+                            <p>It’s true! Wet n Wild NEVER tests on animals, and we are super proud of this. We believe in beauty without cruelty first! </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                            <i class="fa fa-phone-square"></i>
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3>#Stay Wild</h3>
+                            <p>Get the look you've been dreaming of! Watch our tutorials, find your exact shade, and always remember to stay true to yourself. <3 </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Third Parallax Image with Logo Text -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min" id="home">
+        </div>
+
+
+        <!-- Container (Face & Eyes Section) -->
+        <div class="w3-padding-64" id="Face & Eyes">
+
+            <div class="w3-row w3-container">
+                <h1>Face & Eyes</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-card">
+                        <img src="img/face.jpg" class="w3-image" alt="Fergie">
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <button onclick="accordion('Concealer')" class="w3-btn w3-block w3-theme w3-left-align w3-border">Concealer<i class="fa fa-caret-down w3-right w3-xlarge"></i>
+                    </button>
+                    <div id="Concealer" class="w3-container w3-hide w3-theme-l1">
+                        <img src="img/concealor.png" class="w3-image" alt="concealer">
+                        <h4>Photo Focus Concealer $3.99</h4>
+                        <p>Let your natural beauty shine with our selfie-tested creamy and luminous concealer. Tested to be white cast-free under seven different photo lighting conditions, this high coverage concealer allows only your best features to get noticed. Gorgeous skin will be your only look. </p>
+                        <div class="w3-container">
+                            <a href="https://www.wetnwildbeauty.com/face/concealer/photo-focus-concealer.html" class="w3-button w3-round-xxlarge w3-medium w3-black"><i>Shop</i></a>
+                           </div>
+                    </div>              
+                    <button onclick="accordion('Foundation')" class="w3-btn w3-block w3-theme w3-left-align">Foundation</button>
+                    <div id="Foundation" class="w3-container w3-hide w3-theme-l1">
+                        <img src="img/foundation.png" class="w3-image" alt="foundation">
+                        <h4>Photo Focus Foundation $5.99</h4>
+                        <p>Your skin, only better. Our new high-performing, skin-perfecting foundation underwent major road testing under seven different photo lighting conditions to deliver flawless camera-ready makeup every time. Specially made with a matte, light-diffusing complex to give your skin #nofilter perfection. 
+                        <p>*High-performing, breakthrough formula</p>
+                        <p>*Featuring light-adjusting complex to help prevent white cast in photos</p>
+                        <p>*Tested under 7 light conditions with and without the use of flash</p>
+                           <div class="w3-container">
+                            <a href="https://www.wetnwildbeauty.com/face/foundation/photo-focus-foundation.html" class="w3-button w3-round-xxlarge w3-medium w3-black"><i>Shop</i></a>
+                        </div>
+                    </div>
+
+                    <button onclick="accordion('Highlighter')" class="w3-btn w3-block w3-theme w3-left-align">Highlighter</button>
+                    <div id="Highlighter" class="w3-container w3-hide w3-theme-l1">
+                        <img src="img/highlighter.png" class="w3-image" alt="highlighter">
+                        <h4>MegaGlo Highlighting Powder $4.99</h4>
+                        <p>Shimmer and shine in all the right places with the same formula as our must-have MegaGlo Highlighting Powder. Back by popular demand, our #1 highlighting powder is here to stay! Its ultra-pearly finish and easy-to-blend formula makes it a fan favorite! The silky smooth, highly-pigmented powder gives an all over glow when applied to the cheek bones, brow bone, and cupid's bow.</p>
+                           <div class="w3-container">
+                            <a href="https://www.wetnwildbeauty.com/megaglotm-highlighting-powder.html" class="w3-button w3-round-xxlarge w3-medium w3-black"><i>Shop</i></a>
+                        </div>
+                    </div>
+
+                    <button onclick="accordion('Eyeshadow')" class="w3-btn w3-block w3-theme w3-left-align">Eyeshadow</button>
+                    <div id="Eyeshadow" class="w3-container w3-hide w3-theme-l1">
+                        <img src="img/eyeshadow.png" class="w3-image" alt="eyeshawdow">
+                        <h4>Color Icon Eyeshadow 10 Pan Palette $4.99</h4>
+                        <p>Powerfully pigmented, buttery-soft, glides on like a dream. That’s what we dreamed up with our reformulated Color Icon eyeshadows. Our reformulated Color Icon hues come in a mix of coveted colors, from shimmery daytime hues to sultry shades for cocktail hours—including new matte transitional shades for impeccable blending.</p>
+                           <div class="w3-container">
+                            <a href="https://www.wetnwildbeauty.com/eyes/shadow/color-icon-eyeshadow-10-pan-palette.html" class="w3-button w3-round-xxlarge w3-medium w3-black"><i>Shop</i></a>
+                        </div>
+                    </div>
+
+                    <button onclick="accordion('Eye Liner')" class="w3-btn w3-block w3-theme w3-left-align">Eye Liner</button>
+                    <div id="Eye Liner" class="w3-container w3-hide w3-theme-l1">
+                        <img src="img/eyeliner.jpg" class="w3-image" alt="eyeliner">
+                        <h4>MegaLiner Liquid Eyeliner $2.99</h4>
+                        <p>Wing out with an unexpected punch of matte and metallic colors made with long-lasting, high-definition pigment that will have your looks soaring. Features a unique blend of polymers that create rich, fluid lines that stays put and an easy-to-control, flexible brush for a precise application.</p>
+                           <div class="w3-container">
+                            <a href="https://www.wetnwildbeauty.com/eyes/liner/summer-megaliner-liquid-eyeliner.html" class="w3-button w3-round-xxlarge w3-medium w3-black"><i>Shop</i></a>
+                        </div>
+                    </div>
+
+                    <button onclick="accordion('Contour')" class="w3-btn w3-block w3-theme w3-left-align">Contour</button>
+                    <div id="Contour" class="w3-container w3-hide w3-theme-l1">
+                        <img src="img/contour.jpg" class="w3-image" alt="contour">
+                        <h4>MegaGlo Contouring Palette $4.99</h4>
+                        <p>This duo of perfectly complementary contouring powders delivers a flawlessly sculpted face in no time flat. The deeper color defines while the lighter color highlights your best features, leaving you at your #nofilter best, whatever the occasion.</p>
+                           <div class="w3-container">
+                            <a href="https://www.wetnwildbeauty.com/face/highlight-contour/mega-glo-contouring-palette.html" class="w3-button w3-round-xxlarge w3-medium w3-black"><i>Shop</i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- Second Parallax Image with Logo Text -->
+        <div class="bgimg-3 w3-display-container w3-opacity-min" id="home">
+        </div>
+
+
+        <!-- Container (Lips Section) -->
+        <div class="w3-padding-64" id="Lips">
+
+            <div class="w3-row w3-container">
+                <h1>Lips</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-card">
+                        <img src="img/li.jpg" class="w3-image" alt="Lips">
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <div class="w3-bar w3-theme">
+                        <button class="w3-bar-item w3-button" onclick="openTab('Liquid Lipstick')">Liquid Lipstick</button>
+                        <button class="w3-bar-item w3-button" onclick="openTab('Liner')">Liner</button>
+                        <button class="w3-bar-item w3-button" onclick="openTab('Lip Gloss')">Lip Gloss</button>
+                    </div>
+
+
+                    <div id="Liquid Lipstick" class="w3-container tab">
+                        <h2>MegaLast Liquid Catsuit Matte Lipstick $4.99</h2>
+                        <img src="img/3200-12959.png" class="w3-image" alt="liquid lipstick">
+                        <img src="img/3200-12962.png" class="w3-image" alt="liquid lipstick">
+                        <img src="img/3200-12963.png" class="w3-image" alt="liquid lipstick">
+                        <img src="img/ohmydolly1.png" class="w3-image" alt="liquid lipstick">
+                        <img src="img/flamegame1.png" class="w3-image" alt="liquid lipstick">
+                        <img src="img/gothtopic1.png" class="w3-image" alt="liquid lipstick">
+
+                        <p>What glides on like butter, feels like a second skin and wont budge? Our Liquid Catsuit Matte Lipstick! Made with glammed out superpowers, it goes on glossy yet transforms into a high - pigmented matte finish with some serious staying power. Read our lips This color is going nowhere. 
+
+                        <p>*Glides on glossy and transforms into high - pigmented matte finish</p>
+                        <p>*Lightweight formula made with serious staying power</p>
+                        <p>*Intense pigmentation without drying the lips</p>
+                         <div class="w3-container">
+                            <a href="https://www.wetnwildbeauty.com/lips/lip-color/megalast-liquid-catsuit-matte-lipstick.html" class="w3-button w3-round-xxlarge w3-medium w3-black"><i>Shop</i></a>
+                        </div>
+                    </div>
+
+                    <div id="Liner" class="w3-container tab" style="display:none">
+                        <h2>Perfect Pout Gel Lip Liner $2.99</h2>
+                        <img src="img/659d_4.png" class="w3-image" alt="liner">
+                        <img src="img/660d_4.png" class="w3-image" alt="liner">
+                        <img src="img/661d_4.png" class="w3-image" alt="liner">
+                        <img src="img/662d_4.png" class="w3-image" alt="liner">
+                        <img src="img/658d_4.png" class="w3-image" alt="liner">
+                        <img src="img/663d_4.png" class="w3-image" alt="liner">
+
+                        <p>Are you ready for this gel-ly? Tell your lips to get in line for pout perfection. A lip liner like no other, made with a special polymer formula, it seamlessly glides onto lips and leaves color that goes on for days. Wear alone or under lipstick for color that won't budge. Like ever. 
+                        <p>Our 1st GEL Lip Liner</p>
+
+                        <p>*Seamlessly glides onto lips and leaves lasting color</p>
+                        <p>*Smooth, flawless application</p>
+                        <p>*Specially formulated with proprietary polymer and ester complex</p>
+                           <div class="w3-container">
+                            <a href="https://www.wetnwildbeauty.com/lips/lip-liner/perfect-pout-gel-lip-liner.html" class="w3-button w3-round-xxlarge w3-medium w3-black"><i>Shop</i></a>
+                        </div>
+                    </div>
+
+                    <div id="Lip Gloss" class="w3-container tab" style="display:none">
+                        <h2>Color Icon Lip Gloss $3.99</h2>
+                        <img src="img/3100-36246_2_1(1).png" class="w3-image" alt="Lip Gloss">
+                        <img src="img/3100-36247_2_1(1).png" class="w3-image" alt="Lip Gloss">
+                        <img src="img/3100-36248_2_1(1).png" class="w3-image" alt="Lip Gloss">
+                        <img src="img/3100-36249_2_1(1).png" class="w3-image" alt="Lip Gloss">
+                        <p>Give your lips a vibrant summer pout with these ultra-pigmented glosses that deliver a brilliant, mirror-like finish. The super-rich formula features Vitamin E to improve lip texture and Murumuru Seed Butter which has excellent moisturizing and nourishing properties to keep lips soft.</p>
+                       <div class="w3-container">
+                            <a href="https://www.wetnwildbeauty.com/lips/lip-gloss/summer-color-icon-lip-gloss.html" class="w3-button w3-round-xxlarge w3-medium w3-black"><i>Shop</i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Javascript -->
+        <script src="js/tabs.js"></script>
+        <script src="js/topNav.js"></script>
+        <script src="js/accordion.js"></script>
+
+
+    </body>
+
+</html>
